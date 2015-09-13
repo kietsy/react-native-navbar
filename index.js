@@ -123,9 +123,11 @@ const NavigationBar = React.createClass({
     ];
 
     return (
-      <Text style={titleStyle}>
-        {title}
-      </Text>
+      <View style={styles.navBarTitle}>
+        <Text style={titleStyle} numberOfLines={1}>
+          {title}
+        </Text>
+      </View>
     );
   },
 
@@ -184,8 +186,8 @@ const NavigationBar = React.createClass({
     return (
       <View style={[styles.navBarContainer, backgroundStyle, ]}>
         <View style={[styles.navBar, style, ]}>
-          {this.getTitleElement()}
           {this.getLeftButtonElement()}
+          {this.getTitleElement()}
           {this.getRightButtonElement()}
         </View>
       </View>

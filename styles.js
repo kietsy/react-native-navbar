@@ -30,13 +30,15 @@ module.exports = React.StyleSheet.create({
     flex: 2,
     textAlign: 'center',
   },
+  navBarTitle: {
+    flex: 1,
+    marginVertical: 20,
+  },
   navBarTitleText: {
     color: '#373e4d',
     fontWeight: '500',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 15,
+    paddingHorizontal: 10,
+    flex: 0,
   },
   navBarLeftButton: {
     paddingLeft: 10,
